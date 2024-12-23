@@ -13,8 +13,11 @@ module Display_Top(
     output wire [3:0] vgaGreen,
     output wire [3:0] vgaBlue
 );
+	parameter WAIT_ONE = 3125000;
+
 	wire clk_25MHz;
-	clock_divider #(.n(2)) m2( .clk(clk), .clk_div(clk_25MHz) );
+	clock_divider #(.n(2)) m2( .clk(clk), .clk_div(clk_25MHz));
+
 	wire valid;
 	wire [9:0] h_cnt;
 	wire [9:0] v_cnt;
@@ -48,6 +51,7 @@ module Display_Top(
 	wire [11:0] pixel_grass;
 	wire [11:0] pixel_mole;
 	reg [3:0] block_num;
+	reg [4:0] frame_cnt;
 
 	// background grass
 	blk_mem_gen_0 blk_mem_gen_0_inst( .clka(clk_25MHz), .dina(dina), .wea(0), .addra(grass_addr), .douta(pixel_grass));
@@ -59,9 +63,8 @@ module Display_Top(
 
 	always @(*) begin
 		if(draw_hole) begin
-			pixel = ((pixel_mole[11:4] == 8'h00 && pixel_mole[3:0] != 4'h0) || 
-						(pixel_mole[11:4] == 8'h10 && pixel_mole[3:0] != 4'h0) || 
-						(pixel_mole[11:4] == 8'h01 && pixel_mole[3:0] != 4'h0) ) ? pixel_grass : pixel_mole;
+			pixel = (pixel_mole == 12'h481 || pixel_mole == 12'h381 || 
+					pixel_mole == 12'h380 || pixel_mole == 12'h480) ? pixel_grass : pixel_mole;
 		end
 		else begin
 			pixel = pixel_grass;
@@ -74,15 +77,15 @@ module Display_Top(
 		if(draw_hole) begin
 			if(draw_mole) begin
 				case(block_num)
-					4'd0: pixel_addr = ((h_cnt-63) & 63) + (((v_cnt-48) & 63) << 6) + 64*64;
-					4'd1: pixel_addr = ((h_cnt-319) & 63) + (((v_cnt-48) & 63) << 6) + 64*64;
-					4'd2: pixel_addr = ((h_cnt-189) & 63) + (((v_cnt-144) & 63) << 6) + 64*64;
-					4'd3: pixel_addr = ((h_cnt-447) & 63) + (((v_cnt-144) & 63) << 6) + 64*64;
-					4'd4: pixel_addr = ((h_cnt-95) & 63) + (((v_cnt-234) & 63) << 6) + 64*64;
-					4'd5: pixel_addr = ((h_cnt-351) & 63) + (((v_cnt-234) & 63) << 6) + 64*64;
-					4'd6: pixel_addr = ((h_cnt-223) & 63) + (((v_cnt-325) & 63) << 6) + 64*64;
-					4'd7: pixel_addr = ((h_cnt-479) & 63) + (((v_cnt-325) & 63) << 6) + 64*64;
-					4'd8: pixel_addr = ((h_cnt-351) & 63) + (((v_cnt-388) & 63) << 6) + 64*64;
+					4'd0: pixel_addr = ((h_cnt-63) & 63) + (((v_cnt-48) & 63) << 6) + 64*64*frame_cnt;
+					4'd1: pixel_addr = ((h_cnt-319) & 63) + (((v_cnt-48) & 63) << 6) + 64*64*frame_cnt;
+					4'd2: pixel_addr = ((h_cnt-189) & 63) + (((v_cnt-144) & 63) << 6) + 64*64*frame_cnt;
+					4'd3: pixel_addr = ((h_cnt-447) & 63) + (((v_cnt-144) & 63) << 6) + 64*64*frame_cnt;
+					4'd4: pixel_addr = ((h_cnt-95) & 63) + (((v_cnt-234) & 63) << 6) + 64*64*frame_cnt;
+					4'd5: pixel_addr = ((h_cnt-351) & 63) + (((v_cnt-234) & 63) << 6) + 64*64*frame_cnt;
+					4'd6: pixel_addr = ((h_cnt-223) & 63) + (((v_cnt-325) & 63) << 6) + 64*64*frame_cnt;
+					4'd7: pixel_addr = ((h_cnt-479) & 63) + (((v_cnt-325) & 63) << 6) + 64*64*frame_cnt;
+					4'd8: pixel_addr = ((h_cnt-351) & 63) + (((v_cnt-388) & 63) << 6) + 64*64*frame_cnt;
 					default: pixel_addr = 0;
 				endcase 
 			end
@@ -134,6 +137,120 @@ module Display_Top(
 		end 
 		else if(h_cnt >= 351 && h_cnt < 351+64 && v_cnt >= 388 && v_cnt < 388+64) begin
 			block_num = 4'd8;
+		end
+	end
+
+	reg [27:0] one_sec_cnt;
+	always @(posedge clk) begin
+		if(rst) begin
+			one_sec_cnt <= 0;
+		end
+		else begin
+			if(one_sec_cnt == 150_000_000) begin
+				one_sec_cnt <= 0;
+			end
+			else begin
+				one_sec_cnt <= one_sec_cnt + 1;
+			end
+		end
+	end
+
+	always @(*) begin
+		if(one_sec_cnt > 0 && one_sec_cnt < WAIT_ONE) begin
+			frame_cnt = 1;
+		end
+		else if(one_sec_cnt < WAIT_ONE*2) begin
+			frame_cnt = 2;
+		end
+		else if(one_sec_cnt < WAIT_ONE*3) begin
+			frame_cnt = 3;
+		end
+		else if(one_sec_cnt < WAIT_ONE*4) begin
+			frame_cnt = 4;
+		end
+		else if(one_sec_cnt < WAIT_ONE*5) begin
+			frame_cnt = 5;
+		end
+		else if(one_sec_cnt < WAIT_ONE*6) begin
+			frame_cnt = 6;
+		end
+		else if(one_sec_cnt < WAIT_ONE*7) begin
+			frame_cnt = 7;
+		end
+		else if(one_sec_cnt < WAIT_ONE*8) begin
+			frame_cnt = 8;
+		end
+		else if(one_sec_cnt < WAIT_ONE*9) begin
+			frame_cnt = 9;
+		end
+		else if(one_sec_cnt < WAIT_ONE*10) begin
+			frame_cnt = 10;
+		end
+		else if(one_sec_cnt < WAIT_ONE*11) begin
+			frame_cnt = 11;
+		end
+		else if(one_sec_cnt < WAIT_ONE*12) begin
+			frame_cnt = 12;
+		end
+		else if(one_sec_cnt < WAIT_ONE*13) begin
+			frame_cnt = 13;
+		end
+		else if(one_sec_cnt < WAIT_ONE*14) begin
+			frame_cnt = 14;
+		end
+		else if(one_sec_cnt < WAIT_ONE*15) begin
+			frame_cnt = 15;
+		end
+		else if(one_sec_cnt < WAIT_ONE*31) begin
+			frame_cnt = 16;
+		end
+		else if(one_sec_cnt < WAIT_ONE*32) begin
+			frame_cnt = 15;
+		end
+		else if(one_sec_cnt < WAIT_ONE*33) begin
+			frame_cnt = 14;
+		end
+		else if(one_sec_cnt < WAIT_ONE*34) begin
+			frame_cnt = 13;
+		end
+		else if(one_sec_cnt < WAIT_ONE*35) begin
+			frame_cnt = 12;
+		end
+		else if(one_sec_cnt < WAIT_ONE*36) begin
+			frame_cnt = 11;
+		end
+		else if(one_sec_cnt < WAIT_ONE*37) begin
+			frame_cnt = 10;
+		end
+		else if(one_sec_cnt < WAIT_ONE*38) begin
+			frame_cnt = 9;
+		end
+		else if(one_sec_cnt < WAIT_ONE*39) begin
+			frame_cnt = 8;
+		end
+		else if(one_sec_cnt < WAIT_ONE*40) begin
+			frame_cnt = 7;
+		end
+		else if(one_sec_cnt < WAIT_ONE*41) begin
+			frame_cnt = 6;
+		end
+		else if(one_sec_cnt < WAIT_ONE*42) begin
+			frame_cnt = 5;
+		end
+		else if(one_sec_cnt < WAIT_ONE*43) begin
+			frame_cnt = 4;
+		end
+		else if(one_sec_cnt < WAIT_ONE*44) begin
+			frame_cnt = 3;
+		end
+		else if(one_sec_cnt < WAIT_ONE*45) begin
+			frame_cnt = 2;
+		end
+		else if(one_sec_cnt < WAIT_ONE*46) begin
+			frame_cnt = 1;
+		end
+		else begin
+			frame_cnt = 0;
 		end
 	end
 
