@@ -18,7 +18,7 @@ def clip_and_downsample(input_file, output_file, downsample_rate):
 
 # Example usage
 input_file = "audio.wav"
-output_file = "preprocessed.wav"
-downsample_rate = 6400  # Specify the desired downsample rate
+output_file = "audio_preprocessed.wav"
+downsample_rate = 4800  # Specify the desired downsample rate
 
 clip_and_downsample(input_file, output_file, downsample_rate)

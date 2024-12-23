@@ -6,7 +6,7 @@ module Music_from_waveform (
     output reg [15:0] waveform_amplitude
 );
 
-    localparam HOLD_TIME = 31_250; // number of 10ns in 1/3200 sec
+    localparam HOLD_TIME = 20_833; // number of 10ns in 1/4800 sec
     localparam MUSIC_LEN = 64000;  // number of int16 in 2 sec
 
     wire signed [15:0] amp;
@@ -16,9 +16,10 @@ module Music_from_waveform (
     clock_divider #(.n(2)) (.clk(clk), .clk_div(clk_25MHz));
 
     reg [31:0] time_cnt, time_cnt_next;
-    reg [15:0] addr, addr_next;
+    reg [16:0] addr, addr_next;
 
     blk_mem_gen_5 blk_mem_gen_5_inst (.clka(clk_25MHz), .addra(addr), .dina(0), .douta(amp), .wea(0));
+
 
     always @(posedge clk) begin
         if(rst) begin

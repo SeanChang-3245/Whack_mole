@@ -13,15 +13,15 @@ module Audio_top (
     // wire [21:0] bgm_note_div_left, bgm_note_div_right;
     // wire [15:0] bgm_amplitude;
 
-    wire [15:0] music_waveform;
-    wire [15:0] sfx_waveform;
-    reg [15:0] output_waveform;
+    wire signed [15:0] music_waveform;
+    wire signed [15:0] sfx_waveform;
+    reg signed [15:0] output_waveform;
 
     always @(*) begin
         if(sfx_waveform == 0)
             output_waveform = music_waveform;
         else
-            output_waveform = sfx_waveform + music_waveform/4;
+            output_waveform = sfx_waveform*2 + music_waveform/4;
     end
 
     Music_from_waveform Music_from_waveform_inst(

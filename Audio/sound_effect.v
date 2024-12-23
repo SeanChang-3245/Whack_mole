@@ -3,11 +3,11 @@ module SoundEffect_Gen(
     input wire rst, 
     input wire hit, // one pulse signal
     
-    output reg [15:0] sfx_waveform 
+    output reg signed [15:0] sfx_waveform 
 );
 
     localparam HOLD_TIME = 31_250;   // number of 10ns in 1/3200 sec
-    localparam SFX_LEN = 16000; // number of int16 in 0.5 sec
+    localparam SFX_LEN = 1920; // number of int16 in memory
 
     localparam IDLE = 0;
     localparam PLAYING = 1;
@@ -51,6 +51,9 @@ module SoundEffect_Gen(
                 if(time_cnt < 3125*i) begin 
                     sfx_waveform = prev_amp * (10-i) / 10 + amp * i / 10; 
                 end
+                else begin
+                    sfx_waveform = 0;
+                end
             end
         end
         else begin
@@ -63,7 +66,7 @@ module SoundEffect_Gen(
         if(cur_state == IDLE && hit) begin
             next_state = PLAYING;
         end
-        else if(cur_state == PLAYING && time_cnt == SFX_LEN-1) begin
+        else if(cur_state == PLAYING && addr == SFX_LEN-1) begin
             next_state = IDLE;
         end
     end
@@ -74,7 +77,12 @@ module SoundEffect_Gen(
             time_cnt_next = 0;
         end
         else begin
-            time_cnt_next = time_cnt + 1;
+            if(time_cnt == HOLD_TIME-1) begin
+                time_cnt_next = 0;
+            end
+            else begin
+                time_cnt_next = time_cnt + 1;
+            end
         end
     end
 
@@ -89,6 +97,9 @@ module SoundEffect_Gen(
                     addr_next = addr + 1;
                 end
             end
+        end
+        else begin
+            addr_next = 0;
         end
     end
 
