@@ -13,7 +13,16 @@ module Audio_top (
     // wire [21:0] bgm_note_div_left, bgm_note_div_right;
     // wire [15:0] bgm_amplitude;
 
-    wire [15:0] music_waveform;
+    wire signed [15:0] music_waveform;
+    wire signed [15:0] sfx_waveform;
+    reg signed [15:0] output_waveform;
+
+    always @(*) begin
+        if(sfx_waveform == 0)
+            output_waveform = music_waveform;
+        else
+            output_waveform = sfx_waveform*2 + music_waveform/4;
+    end
 
     Music_from_waveform Music_from_waveform_inst(
         .clk(clk),
@@ -23,30 +32,19 @@ module Audio_top (
         .waveform_amplitude(music_waveform)
     );
 
+    SoundEffect_Gen SoundEffect_Gen_inst(
+        .clk(clk),
+        .rst(rst),
+        .hit(hit),
 
-    // BGM_gen bgm_gen_inst(
-    //     .clk(clk),
-    //     .rst(rst),
-    //     .bgm_note_div_left(bgm_note_div_left),
-    //     .bgm_note_div_right(bgm_note_div_right)
-    // );
-
-    // buzzer_control buzzer_control_inst(
-    //     .clk(clk),
-    //     .rst(rst),
-    //     .volume(volume),
-    //     .amplitude(note_ampl >> 3),
-    //     .note_div_left(bgm_note_div_left),
-    //     .note_div_right(bgm_note_div_right),
-    //     .audio_left(audio_left),
-    //     .audio_right(audio_right)
-    // );
+        .sfx_waveform(sfx_waveform)
+    );
 
     speaker_control speaker_control_inst(
         .clk(clk),
         .rst(rst),
-        .audio_in_left(music_waveform),
-        .audio_in_right(music_waveform),
+        .audio_in_left(output_waveform),
+        .audio_in_right(output_waveform),
         .audio_mclk(audio_mclk),
         .audio_lrck(audio_lrck),
         .audio_sck(audio_sck),

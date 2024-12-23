@@ -17,6 +17,6 @@ def wav_to_int(input_path, output_path):
             f.write("%s\n" % item)
 
 # Example usage
-input_path = "preprocessed.wav"
+input_path = "audio_preprocessed.wav"
 output_path = "audio_waveform.txt"
 wav_to_int(input_path, output_path)
