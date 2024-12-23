@@ -31,7 +31,7 @@ module Keyboard_Interface(
     always@* begin
         one_pulse_pos = 15;
         if(!prev_holding && key_valid) begin
-            one_pulse_pos = last_change;
+            one_pulse_pos = key_pos;
         end
     end
 
