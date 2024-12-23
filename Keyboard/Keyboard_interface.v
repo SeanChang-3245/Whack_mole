@@ -5,7 +5,8 @@ module Keyboard_Interface(
     inout wire PS2_CLK,
     inout wire PS2_DATA,
 
-    output reg [3:0] one_pulse_pos
+    output reg [3:0] one_pulse_pos,
+    output wire hit
 );
 
 
@@ -14,6 +15,7 @@ module Keyboard_Interface(
     reg [3:0] key_pos;
     wire key_valid;
 
+    assign hit = one_pulse_pos != 15;
     wire cur_holding = |(key_down);
     reg prev_holding;
 
