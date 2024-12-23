@@ -6,7 +6,7 @@ module Music_from_waveform (
     output wire [15:0] waveform_amplitude
 );
 
-    localparam HOLD_TIME = 3_150_000/60; // number of 10ns in 1/3200 sec
+    localparam HOLD_TIME = 31_250; // number of 10ns in 1/3200 sec
     localparam MUSIC_LEN = 64000;
 
     wire clk_25MHz;
