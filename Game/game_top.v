@@ -14,7 +14,7 @@ module Game_Control(
     localparam GAME = 1;
     localparam FIN = 2;
 
-    localparam PLACE_DURATION = 50_000_000; // 0.5 sec
+    localparam PLACE_DURATION = 150_000_000; // 1.5 sec
     localparam GAME_LEN = 30 * 100_000_000;  // 30 sec
     localparam WIN_SCORE = 10;
 
@@ -131,7 +131,7 @@ module LFSR(
 
     always@(posedge clk) begin
         if(rst) begin
-            rnd <= 9'b0_100_0010;
+            rnd <= 9'b0_100_0000;
         end
         else begin
             rnd <= {rnd[0], rnd[8], rnd[7]^rnd[0], rnd[6:5], rnd[4]^rnd[0], rnd[3]^rnd[0], rnd[2:1]};

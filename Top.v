@@ -65,6 +65,7 @@ module Top(
 
         .map(map),
         .score(score),
+		.cur_state(cur_state),
 
         .DIGIT(DIGIT),
         .DISPLAY(DISPLAY),
