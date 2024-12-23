@@ -4,6 +4,7 @@ module Display_Top(
     
     input wire [8:0] map,
     input wire [3:0] score,
+	input wire [2:0] cur_state,
 
     output wire [3:0] DIGIT,
     output wire [6:0] DISPLAY,
@@ -13,7 +14,12 @@ module Display_Top(
     output wire [3:0] vgaGreen,
     output wire [3:0] vgaBlue
 );
+	localparam IDLE = 0;
+    localparam GAME = 1;
+    localparam FIN = 2;
+
 	parameter WAIT_ONE = 3125000;
+	parameter FRONT_COLOR = 12'hfff;
 
 	wire clk_25MHz;
 	clock_divider #(.n(2)) m2( .clk(clk), .clk_div(clk_25MHz));
@@ -50,19 +56,31 @@ module Display_Top(
 	reg [14:0] grass_addr;
 	wire [11:0] pixel_grass;
 	wire [11:0] pixel_mole;
+	reg [17:0] topic_addr;
 	reg [3:0] block_num;
 	reg [4:0] frame_cnt;
+	wire pixel_topic;
 
 	// background grass
 	blk_mem_gen_0 blk_mem_gen_0_inst( .clka(clk_25MHz), .dina(dina), .wea(0), .addra(grass_addr), .douta(pixel_grass));
 	// moles
 	blk_mem_gen_1 blk_mem_gen_1_inst( .clka(clk_25MHz), .dina(dina), .wea(0), .addra(pixel_addr), .douta(pixel_mole));
+	// topic
+	blk_mem_gen_2 blk_mem_gen_2_inst( .clka(clk_25MHz), .dina(dina), .wea(0), .addra(topic_addr), .douta(pixel_topic));
 
 	assign draw_hole = block_num != 4'hf;
 	assign draw_mole = (block_num != 4'hf) ? map[block_num] : 0;
 
 	always @(*) begin
-		if(draw_hole) begin
+		if(cur_state == IDLE || cur_state == FIN) begin
+			if(v_cnt >= 180 && v_cnt < 180+120) begin
+				pixel = pixel_topic ? FRONT_COLOR : pixel_grass;
+			end
+			else begin
+				pixel = pixel_grass;
+			end
+		end
+		else if(draw_hole) begin
 			pixel = (pixel_mole == 12'h481 || pixel_mole == 12'h381 || 
 					pixel_mole == 12'h380 || pixel_mole == 12'h480) ? pixel_grass : pixel_mole;
 		end
@@ -108,6 +126,19 @@ module Display_Top(
 	always @(*) begin
 		grass_addr = h_cnt%80 + (v_cnt%60)*80;
 	end
+	always @(*) begin
+		if(v_cnt >= 180 && v_cnt < 180+120) begin
+			if(cur_state == IDLE) begin
+				topic_addr = h_cnt + (v_cnt-180)*640;
+			end
+			else if(cur_state == FIN && score == 10) begin
+				topic_addr = h_cnt + (v_cnt-180)*640 + 640*120;
+			end
+			else if(cur_state == FIN && score < 10) begin
+				topic_addr = h_cnt + (v_cnt-180)*640 + 640*120*2;
+			end
+		end
+	end
 	// block num
 	always @(*) begin
 		block_num = 4'hf;
@@ -142,7 +173,7 @@ module Display_Top(
 
 	reg [27:0] one_sec_cnt;
 	always @(posedge clk) begin
-		if(rst) begin
+		if(rst || cur_state == IDLE) begin
 			one_sec_cnt <= 0;
 		end
 		else begin
