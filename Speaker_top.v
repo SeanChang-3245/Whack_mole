@@ -5,6 +5,7 @@ module Speaker_top(
     input wire hit,
     input wire en_music,
 
+    output wire LED,
     output wire audio_mclk,
     output wire audio_lrck,
     output wire audio_sck,
@@ -14,6 +15,7 @@ module Speaker_top(
 
     one_pulse op1(.clk(clk), .pb_db(hit), .pb_op(hit_op));
 
+    assign LED = rst;
 
     Audio_top Audio_top_inst(
         .clk(clk),

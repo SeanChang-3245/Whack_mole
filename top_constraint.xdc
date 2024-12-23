@@ -161,8 +161,8 @@ set_property PACKAGE_PIN A16 [get_ports {rst_out}]
 set_property PACKAGE_PIN B15 [get_ports {en_music}]
    set_property IOSTANDARD LVCMOS33 [get_ports {en_music}]
 ## Sch name = JB4
-set_property PACKAGE_PIN B16 [get_ports {hit}]
-   set_property IOSTANDARD LVCMOS33 [get_ports {hit}]
+set_property PACKAGE_PIN B16 [get_ports {hit_out}]
+   set_property IOSTANDARD LVCMOS33 [get_ports {hit_out}]
 # ## Sch name = JB7
 # set_property PACKAGE_PIN A15 [get_ports {inter_data_in[3]}]
 #    set_property IOSTANDARD LVCMOS33 [get_ports {inter_data_in[3]}]

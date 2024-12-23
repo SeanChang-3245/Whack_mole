@@ -9,7 +9,7 @@ module Top(
     inout wire PS2_DATA,
 
     output wire rst_out,
-    output wire hit, 
+    output wire hit_out, 
     output wire en_music,
     output wire [3:0] DIGIT,
     output wire [6:0] DISPLAY,
@@ -39,6 +39,23 @@ module Top(
     // wire en_music;
 
     assign rst_out = rst;
+
+    reg [3:0] hit_buffer;
+    assign hit_out = hit_buffer[0];
+    always@(posedge clk) begin
+        if(rst) begin
+            hit_buffer <= 0;
+        end
+        else begin
+            if(hit) begin
+                hit_buffer <= 4'hf;
+            end
+            else begin
+                hit_buffer <= hit_buffer << 1;
+            end
+        end
+    end
+
 
     Keyboard_Interface Keyboard_Interface_inst(
         .clk(clk),
