@@ -1,0 +1,841 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Dec 23 15:22:05 2024
+# Process ID: 25340
+# Current directory: C:/Projects/Whack_mole/Whack_mole/Whack_mole.runs/synth_1
+# Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: C:/Projects/Whack_mole/Whack_mole/Whack_mole.runs/synth_1/Top.vds
+# Journal file: C:/Projects/Whack_mole/Whack_mole/Whack_mole.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4912 
+WARNING: [Synth 8-2507] parameter declaration becomes local in KeyboardCtrl with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:18]
+WARNING: [Synth 8-2507] parameter declaration becomes local in KeyboardCtrl with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:19]
+WARNING: [Synth 8-2507] parameter declaration becomes local in KeyboardCtrl with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:20]
+WARNING: [Synth 8-2507] parameter declaration becomes local in KeyboardCtrl with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:21]
+WARNING: [Synth 8-2507] parameter declaration becomes local in KeyboardCtrl with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:22]
+WARNING: [Synth 8-2507] parameter declaration becomes local in KeyboardCtrl with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:23]
+WARNING: [Synth 8-2507] parameter declaration becomes local in KeyboardCtrl with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:24]
+WARNING: [Synth 8-2507] parameter declaration becomes local in KeyboardCtrl with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:26]
+WARNING: [Synth 8-2507] parameter declaration becomes local in KeyboardCtrl with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:27]
+WARNING: [Synth 8-2507] parameter declaration becomes local in KeyboardCtrl with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:28]
+WARNING: [Synth 8-2507] parameter declaration becomes local in KeyboardCtrl with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:29]
+WARNING: [Synth 8-2507] parameter declaration becomes local in KeyboardCtrl with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:31]
+WARNING: [Synth 8-2507] parameter declaration becomes local in KeyboardCtrl with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:32]
+WARNING: [Synth 8-2507] parameter declaration becomes local in KeyboardCtrl with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:33]
+WARNING: [Synth 8-2507] parameter declaration becomes local in KeyboardCtrl with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:34]
+WARNING: [Synth 8-2507] parameter declaration becomes local in KeyboardCtrl with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:35]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:191]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:192]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:193]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:194]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:229]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:231]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:232]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:233]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:234]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:235]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:236]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:237]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:238]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:239]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:240]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:241]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:242]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:243]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:244]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Ps2Interface with formal parameter declaration list [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:245]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 773.055 ; gain = 238.820
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Projects/Whack_mole/Top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'button_preprocess' [C:/Projects/Whack_mole/button_preprocess.v:1]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Projects/Whack_mole/debouce.v:1]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Projects/Whack_mole/clock_divider.v:1]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Projects/Whack_mole/clock_divider.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (2#1) [C:/Projects/Whack_mole/debouce.v:1]
+INFO: [Synth 8-6157] synthesizing module 'one_pulse' [C:/Projects/Whack_mole/one_pulse.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'one_pulse' (3#1) [C:/Projects/Whack_mole/one_pulse.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'button_preprocess' (4#1) [C:/Projects/Whack_mole/button_preprocess.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Keyboard_Interface' [C:/Projects/Whack_mole/Keyboard/Keyboard_interface.v:1]
+INFO: [Synth 8-6157] synthesizing module 'KeyboardDecoder' [C:/Projects/Whack_mole/Keyboard/keyboard_decoder.v:1]
+	Parameter INIT bound to: 2'b00 
+	Parameter WAIT_FOR_SIGNAL bound to: 2'b01 
+	Parameter GET_SIGNAL_DOWN bound to: 2'b10 
+	Parameter WAIT_RELEASE bound to: 2'b11 
+	Parameter IS_INIT bound to: 8'b10101010 
+	Parameter IS_EXTEND bound to: 8'b11100000 
+	Parameter IS_BREAK bound to: 8'b11110000 
+INFO: [Synth 8-6157] synthesizing module 'KeyboardCtrl' [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:1]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter RESET bound to: 3'b000 
+	Parameter SEND_CMD bound to: 3'b001 
+	Parameter WAIT_ACK bound to: 3'b010 
+	Parameter WAIT_KEYIN bound to: 3'b011 
+	Parameter GET_BREAK bound to: 3'b100 
+	Parameter GET_EXTEND bound to: 3'b101 
+	Parameter RESET_WAIT_BAT bound to: 3'b110 
+	Parameter CMD_RESET bound to: 8'b11111111 
+	Parameter CMD_SET_STATUS_LEDS bound to: 8'b11101101 
+	Parameter RSP_ACK bound to: 8'b11111010 
+	Parameter RSP_BAT_PASS bound to: 8'b10101010 
+	Parameter BREAK_CODE bound to: 8'b11110000 
+	Parameter EXTEND_CODE bound to: 8'b11100000 
+	Parameter CAPS_LOCK bound to: 8'b01011000 
+	Parameter NUM_LOCK bound to: 8'b01110111 
+	Parameter SCR_LOCK bound to: 8'b01111110 
+INFO: [Synth 8-6157] synthesizing module 'Ps2Interface' [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:164]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter CLOCK_CNT_100US bound to: 10000 - type: integer 
+	Parameter CLOCK_CNT_20US bound to: 2000 - type: integer 
+	Parameter DEBOUNCE_DELAY bound to: 15 - type: integer 
+	Parameter BITS_NUM bound to: 11 - type: integer 
+	Parameter parity_table bound to: 256'b1001011001101001011010011001011001101001100101101001011001101001011010011001011010010110011010011001011001101001011010011001011001101001100101101001011001101001100101100110100101101001100101101001011001101001011010011001011001101001100101101001011001101001 
+	Parameter IDLE bound to: 4'b0000 
+	Parameter RX_NEG_EDGE bound to: 4'b0001 
+	Parameter RX_CLK_LOW bound to: 4'b0010 
+	Parameter RX_CLK_HIGH bound to: 4'b0011 
+	Parameter TX_FORCE_CLK_LOW bound to: 4'b0100 
+	Parameter TX_BRING_DATA_LOW bound to: 4'b0101 
+	Parameter TX_RELEASE_CLK bound to: 4'b0110 
+	Parameter TX_WAIT_FIRTS_NEG_EDGE bound to: 4'b0111 
+	Parameter TX_CLK_LOW bound to: 4'b1000 
+	Parameter TX_WAIT_POS_EDGE bound to: 4'b1001 
+	Parameter TX_CLK_HIGH bound to: 4'b1010 
+	Parameter TX_WAIT_POS_EDGE_BEFORE_ACK bound to: 4'b1011 
+	Parameter TX_WAIT_ACK bound to: 4'b1100 
+	Parameter TX_RECEIVED_ACK bound to: 4'b1101 
+	Parameter TX_ERROR_NO_ACK bound to: 4'b1110 
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (5#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196]
+INFO: [Synth 8-6155] done synthesizing module 'Ps2Interface' (6#1) [C:/Projects/Whack_mole/Keyboard/Ps2Interface.v:164]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardCtrl' (7#1) [C:/Projects/Whack_mole/Keyboard/KeyboardCtrl.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Projects/Whack_mole/Keyboard/keyboard_decoder.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardDecoder' (8#1) [C:/Projects/Whack_mole/Keyboard/keyboard_decoder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Keyboard_Interface' (9#1) [C:/Projects/Whack_mole/Keyboard/Keyboard_interface.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Game_Control' [C:/Projects/Whack_mole/Game/game_top.v:1]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter GAME bound to: 1 - type: integer 
+	Parameter FIN bound to: 2 - type: integer 
+	Parameter PLACE_DURATION bound to: 500000000 - type: integer 
+	Parameter GAME_LEN bound to: -1294967296 - type: integer 
+	Parameter WIN_SCORE bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'LFSR' [C:/Projects/Whack_mole/Game/game_top.v:123]
+INFO: [Synth 8-6155] done synthesizing module 'LFSR' (10#1) [C:/Projects/Whack_mole/Game/game_top.v:123]
+INFO: [Synth 8-6155] done synthesizing module 'Game_Control' (11#1) [C:/Projects/Whack_mole/Game/game_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Display_Top' [C:/Projects/Whack_mole/Display/display_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegment' [C:/Projects/Whack_mole/Display/SevenSegment.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegment' (12#1) [C:/Projects/Whack_mole/Display/SevenSegment.v:1]
+WARNING: [Synth 8-3848] Net hsync in module/entity Display_Top does not have driver. [C:/Projects/Whack_mole/Display/display_top.v:10]
+WARNING: [Synth 8-3848] Net vsync in module/entity Display_Top does not have driver. [C:/Projects/Whack_mole/Display/display_top.v:11]
+WARNING: [Synth 8-3848] Net vgaRed in module/entity Display_Top does not have driver. [C:/Projects/Whack_mole/Display/display_top.v:12]
+WARNING: [Synth 8-3848] Net vgaGreen in module/entity Display_Top does not have driver. [C:/Projects/Whack_mole/Display/display_top.v:13]
+WARNING: [Synth 8-3848] Net vgaBlue in module/entity Display_Top does not have driver. [C:/Projects/Whack_mole/Display/display_top.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'Display_Top' (13#1) [C:/Projects/Whack_mole/Display/display_top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 1st driver pin 'Top:/Display_Top_inst/hsync' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 2nd driver pin 'GND' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Projects/Whack_mole/Top.v-1.7 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 1st driver pin 'Top:/Display_Top_inst/vsync' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 2nd driver pin 'GND' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Projects/Whack_mole/Top.v-1.7 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 1st driver pin 'Top:/Display_Top_inst/vgaRed[0]' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 2nd driver pin 'GND' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Projects/Whack_mole/Top.v-1.7 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 1st driver pin 'Top:/Display_Top_inst/vgaRed[1]' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 2nd driver pin 'GND' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Projects/Whack_mole/Top.v-1.7 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 1st driver pin 'Top:/Display_Top_inst/vgaRed[2]' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 2nd driver pin 'GND' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Projects/Whack_mole/Top.v-1.7 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 1st driver pin 'Top:/Display_Top_inst/vgaRed[3]' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 2nd driver pin 'GND' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Projects/Whack_mole/Top.v-1.7 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 1st driver pin 'Top:/Display_Top_inst/vgaGreen[0]' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 2nd driver pin 'GND' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Projects/Whack_mole/Top.v-1.7 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 1st driver pin 'Top:/Display_Top_inst/vgaGreen[1]' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 2nd driver pin 'GND' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Projects/Whack_mole/Top.v-1.7 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 1st driver pin 'Top:/Display_Top_inst/vgaGreen[2]' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 2nd driver pin 'GND' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Projects/Whack_mole/Top.v-1.7 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 1st driver pin 'Top:/Display_Top_inst/vgaGreen[3]' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 2nd driver pin 'GND' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Projects/Whack_mole/Top.v-1.7 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 1st driver pin 'Top:/Display_Top_inst/vgaBlue[0]' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 2nd driver pin 'GND' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Projects/Whack_mole/Top.v-1.7 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 1st driver pin 'Top:/Display_Top_inst/vgaBlue[1]' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 2nd driver pin 'GND' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Projects/Whack_mole/Top.v-1.7 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 1st driver pin 'Top:/Display_Top_inst/vgaBlue[2]' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 2nd driver pin 'GND' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Projects/Whack_mole/Top.v-1.7 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 1st driver pin 'Top:/Display_Top_inst/vgaBlue[3]' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Projects/Whack_mole/Top.v-1.7 with 2nd driver pin 'GND' [C:/Projects/Whack_mole/Top.v:1]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Projects/Whack_mole/Top.v-1.7 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Projects/Whack_mole/Top.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (14#1) [C:/Projects/Whack_mole/Top.v:1]
+WARNING: [Synth 8-3917] design Top has port LED[12] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[11] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[10] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[9] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port hsync driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vsync driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaRed[3] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaRed[2] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaRed[1] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaRed[0] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaGreen[3] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaGreen[2] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaGreen[1] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaGreen[0] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaBlue[3] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaBlue[2] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaBlue[1] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaBlue[0] driven by constant 0
+WARNING: [Synth 8-3331] design Display_Top has unconnected port hsync
+WARNING: [Synth 8-3331] design Display_Top has unconnected port vsync
+WARNING: [Synth 8-3331] design Display_Top has unconnected port vgaRed[3]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port vgaRed[2]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port vgaRed[1]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port vgaRed[0]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port vgaGreen[3]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port vgaGreen[2]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port vgaGreen[1]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port vgaGreen[0]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port vgaBlue[3]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port vgaBlue[2]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port vgaBlue[1]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port vgaBlue[0]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port map[8]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port map[7]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port map[6]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port map[5]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port map[4]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port map[3]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port map[2]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port map[1]
+WARNING: [Synth 8-3331] design Display_Top has unconnected port map[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 825.547 ; gain = 291.312
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 825.547 ; gain = 291.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 825.547 ; gain = 291.312
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 825.547 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Projects/Whack_mole/top_constraint.xdc]
+WARNING: [Vivado 12-584] No ports matched 'inter_data_in[0]'. [C:/Projects/Whack_mole/top_constraint.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_in[0]'. [C:/Projects/Whack_mole/top_constraint.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_in[1]'. [C:/Projects/Whack_mole/top_constraint.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_in[1]'. [C:/Projects/Whack_mole/top_constraint.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_in[2]'. [C:/Projects/Whack_mole/top_constraint.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:161]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_in[2]'. [C:/Projects/Whack_mole/top_constraint.xdc:162]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:162]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Request_in'. [C:/Projects/Whack_mole/top_constraint.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:164]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Request_in'. [C:/Projects/Whack_mole/top_constraint.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_in[3]'. [C:/Projects/Whack_mole/top_constraint.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_in[3]'. [C:/Projects/Whack_mole/top_constraint.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_in[4]'. [C:/Projects/Whack_mole/top_constraint.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_in[4]'. [C:/Projects/Whack_mole/top_constraint.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_in[5]'. [C:/Projects/Whack_mole/top_constraint.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_in[5]'. [C:/Projects/Whack_mole/top_constraint.xdc:174]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:174]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Ack_in'. [C:/Projects/Whack_mole/top_constraint.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Ack_in'. [C:/Projects/Whack_mole/top_constraint.xdc:177]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:177]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_out[0]'. [C:/Projects/Whack_mole/top_constraint.xdc:183]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:183]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_out[0]'. [C:/Projects/Whack_mole/top_constraint.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_out[1]'. [C:/Projects/Whack_mole/top_constraint.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_out[1]'. [C:/Projects/Whack_mole/top_constraint.xdc:187]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:187]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_out[2]'. [C:/Projects/Whack_mole/top_constraint.xdc:189]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:189]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_out[2]'. [C:/Projects/Whack_mole/top_constraint.xdc:190]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:190]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Request_out'. [C:/Projects/Whack_mole/top_constraint.xdc:192]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:192]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Request_out'. [C:/Projects/Whack_mole/top_constraint.xdc:193]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:193]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_out[3]'. [C:/Projects/Whack_mole/top_constraint.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_out[3]'. [C:/Projects/Whack_mole/top_constraint.xdc:196]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:196]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_out[4]'. [C:/Projects/Whack_mole/top_constraint.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_out[4]'. [C:/Projects/Whack_mole/top_constraint.xdc:199]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:199]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_out[5]'. [C:/Projects/Whack_mole/top_constraint.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'inter_data_out[5]'. [C:/Projects/Whack_mole/top_constraint.xdc:202]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:202]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Ack_out'. [C:/Projects/Whack_mole/top_constraint.xdc:204]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:204]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Ack_out'. [C:/Projects/Whack_mole/top_constraint.xdc:205]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Projects/Whack_mole/top_constraint.xdc:205]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Projects/Whack_mole/top_constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Projects/Whack_mole/top_constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 933.723 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 933.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 933.723 ; gain = 399.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 933.723 ; gain = 399.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 933.723 ; gain = 399.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Ps2Interface'
+INFO: [Synth 8-5544] ROM "ps2_clk_out_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ps2_clk_en_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'KeyboardCtrl'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'KeyboardDecoder'
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'Game_Control'
+INFO: [Synth 8-802] inferred FSM for state register 'digit_reg' in module 'SevenSegment'
+INFO: [Synth 8-5544] ROM "digit" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                  000000000000010 |                             0000
+        TX_FORCE_CLK_LOW |                  000000000001000 |                             0100
+       TX_BRING_DATA_LOW |                  000000000010000 |                             0101
+          TX_RELEASE_CLK |                  100000000000000 |                             0110
+  TX_WAIT_FIRTS_NEG_EDGE |                  001000000000000 |                             0111
+              TX_CLK_LOW |                  000100000000000 |                             1000
+        TX_WAIT_POS_EDGE |                  010000000000000 |                             1001
+TX_WAIT_POS_EDGE_BEFORE_ACK |                  000001000000000 |                             1011
+             TX_WAIT_ACK |                  000000010000000 |                             1100
+         TX_RECEIVED_ACK |                  000000000100000 |                             1101
+         TX_ERROR_NO_ACK |                  000000100000000 |                             1110
+             TX_CLK_HIGH |                  000010000000000 |                             1010
+             RX_NEG_EDGE |                  000000000000100 |                             0001
+              RX_CLK_LOW |                  000000001000000 |                             0010
+             RX_CLK_HIGH |                  000000000000001 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Ps2Interface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   RESET |                              000 |                              000
+                SEND_CMD |                              001 |                              001
+                WAIT_ACK |                              010 |                              010
+          RESET_WAIT_BAT |                              011 |                              110
+              WAIT_KEYIN |                              100 |                              011
+              GET_EXTEND |                              101 |                              101
+               GET_BREAK |                              110 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'KeyboardCtrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                               00 |                               00
+         WAIT_FOR_SIGNAL |                               01 |                               01
+         GET_SIGNAL_DOWN |                               10 |                               10
+            WAIT_RELEASE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'KeyboardDecoder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                              001 |                              000
+*
+                 iSTATE0 |                              010 |                              001
+                  iSTATE |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cur_state_reg' using encoding 'one-hot' in module 'Game_Control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                              000 |                             1111
+*
+                  iSTATE |                              001 |                             1110
+                 iSTATE0 |                              010 |                             1101
+                 iSTATE1 |                              011 |                             1011
+                 iSTATE2 |                              100 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'digit_reg' using encoding 'sequential' in module 'SevenSegment'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 933.723 ; gain = 399.488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	              512 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+	  15 Input     15 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 17    
+	   2 Input     14 Bit        Muxes := 3     
+	  15 Input     14 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   3 Input      9 Bit        Muxes := 2     
+	   7 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	   5 Input      4 Bit        Muxes := 2     
+	  25 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 23    
+	  15 Input      1 Bit        Muxes := 6     
+	   7 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module one_pulse 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Ps2Interface 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	               14 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	  15 Input     15 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 17    
+	   2 Input     14 Bit        Muxes := 3     
+	  15 Input     14 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 8     
+	  15 Input      1 Bit        Muxes := 6     
+Module KeyboardCtrl 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   7 Input      8 Bit        Muxes := 1     
+	  25 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 7     
+Module KeyboardDecoder 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 7     
+Module Keyboard_Interface 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module LFSR 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	                9 Bit    Registers := 1     
+Module Game_Control 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+	   3 Input      9 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+Module SevenSegment 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+Module Display_Top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design Top has port LED[15] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[12] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[11] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[10] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port LED[9] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port hsync driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vsync driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaRed[3] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaRed[2] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaRed[1] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaRed[0] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaGreen[3] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaGreen[2] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaGreen[1] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaGreen[0] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaBlue[3] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaBlue[2] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaBlue[1] driven by constant 0
+WARNING: [Synth 8-3917] design Top has port vgaBlue[0] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'Keyboard_Interface_inst/KeyboardDecoder_inst/inst/lock_status_reg[2]' (FDCE) to 'Keyboard_Interface_inst/KeyboardDecoder_inst/inst/lock_status_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Keyboard_Interface_inst/KeyboardDecoder_inst/inst/lock_status_reg[1]' (FDCE) to 'Keyboard_Interface_inst/KeyboardDecoder_inst/inst/lock_status_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Keyboard_Interface_inst/KeyboardDecoder_inst/inst/lock_status_reg[0] )
+INFO: [Synth 8-3886] merging instance 'Keyboard_Interface_inst/KeyboardDecoder_inst/inst/tx_data_reg[6]' (FDCE) to 'Keyboard_Interface_inst/KeyboardDecoder_inst/inst/tx_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Keyboard_Interface_inst/KeyboardDecoder_inst/inst/tx_data_reg[7]' (FDCE) to 'Keyboard_Interface_inst/KeyboardDecoder_inst/inst/tx_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Keyboard_Interface_inst/KeyboardDecoder_inst/inst/tx_data_reg[5]' (FDCE) to 'Keyboard_Interface_inst/KeyboardDecoder_inst/inst/tx_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Keyboard_Interface_inst/KeyboardDecoder_inst/inst/tx_data_reg[4]' (FDCE) to 'Keyboard_Interface_inst/KeyboardDecoder_inst/inst/tx_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Game_Control_inst/cur_score_reg[3]' (FDRE) to 'Game_Control_inst/cur_score_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Game_Control_inst/cur_score_reg[2]' (FDRE) to 'Game_Control_inst/cur_score_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Game_Control_inst/cur_score_reg[1] )
+INFO: [Synth 8-3886] merging instance 'Keyboard_Interface_inst/KeyboardDecoder_inst/inst/tx_data_reg[2]' (FDCE) to 'Keyboard_Interface_inst/KeyboardDecoder_inst/inst/tx_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Keyboard_Interface_inst/KeyboardDecoder_inst/inst/tx_data_reg[1]' (FDCE) to 'Keyboard_Interface_inst/KeyboardDecoder_inst/inst/tx_data_reg[0]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 933.723 ; gain = 399.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+-----------------------------+---------------+----------------+
+|Module Name  | RTL Object                  | Depth x Width | Implemented As | 
++-------------+-----------------------------+---------------+----------------+
+|Ps2Interface | parity_table                | 256x1         | LUT            | 
+|Ps2Interface | parity_table                | 256x1         | LUT            | 
+|KeyboardCtrl | Ps2Interface_i/parity_table | 256x1         | LUT            | 
+|KeyboardCtrl | Ps2Interface_i/parity_table | 256x1         | LUT            | 
++-------------+-----------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 933.723 ; gain = 399.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1038.051 ; gain = 503.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1039.078 ; gain = 504.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop Keyboard_Interface_inst/KeyboardDecoder_inst/inst/Ps2Interface_i/ps2_clk_en_reg is being inverted and renamed to Keyboard_Interface_inst/KeyboardDecoder_inst/inst/Ps2Interface_i/ps2_clk_en_reg_inv.
+INFO: [Synth 8-5365] Flop Keyboard_Interface_inst/KeyboardDecoder_inst/inst/Ps2Interface_i/ps2_data_en_reg is being inverted and renamed to Keyboard_Interface_inst/KeyboardDecoder_inst/inst/Ps2Interface_i/ps2_data_en_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1039.078 ; gain = 504.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1039.078 ; gain = 504.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1039.078 ; gain = 504.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1039.078 ; gain = 504.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1039.078 ; gain = 504.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1039.078 ; gain = 504.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    28|
+|3     |LUT1   |     5|
+|4     |LUT2   |    32|
+|5     |LUT3   |    22|
+|6     |LUT4   |   652|
+|7     |LUT5   |   103|
+|8     |LUT6   |    92|
+|9     |FDCE   |   632|
+|10    |FDPE   |     8|
+|11    |FDRE   |   101|
+|12    |FDSE   |     5|
+|13    |IBUF   |     3|
+|14    |IOBUF  |     2|
+|15    |OBUF   |    41|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------+-------------------+------+
+|      |Instance                  |Module             |Cells |
++------+--------------------------+-------------------+------+
+|1     |top                       |                   |  1727|
+|2     |  Display_Top_inst        |Display_Top        |    33|
+|3     |    SevenSegment_inst     |SevenSegment       |    33|
+|4     |  Game_Control_inst       |Game_Control       |   139|
+|5     |    LFSR_inst             |LFSR               |    12|
+|6     |  Keyboard_Interface_inst |Keyboard_Interface |  1482|
+|7     |    KeyboardDecoder_inst  |KeyboardDecoder    |  1481|
+|8     |      inst                |KeyboardCtrl       |   212|
+|9     |        Ps2Interface_i    |Ps2Interface       |   177|
+|10    |      op                  |one_pulse_0        |     2|
+|11    |  bp                      |button_preprocess  |    28|
+|12    |    db1                   |debounce           |    27|
+|13    |      m1                  |clock_divider      |    21|
+|14    |    op                    |one_pulse          |     1|
++------+--------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1039.078 ; gain = 504.844
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 1039.078 ; gain = 396.668
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1039.078 ; gain = 504.844
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1039.078 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1047.008 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+70 Infos, 133 Warnings, 74 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1047.008 ; gain = 749.484
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1047.008 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/Whack_mole/Whack_mole/Whack_mole.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 23 15:23:04 2024...
