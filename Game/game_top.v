@@ -4,6 +4,7 @@ module Game_Control(
     input wire start_game,
     input wire [3:0] one_pulse_pos,
 
+    output wire en_music,
     output reg [3:0] cur_score,
     output reg [2:0] cur_state,
     output reg [8:0] map
@@ -13,7 +14,7 @@ module Game_Control(
     localparam GAME = 1;
     localparam FIN = 2;
 
-    localparam PLACE_DURATION = 500_000_000; // 0.5 sec
+    localparam PLACE_DURATION = 50_000_000; // 0.5 sec
     localparam GAME_LEN = 30 * 100_000_000;  // 30 sec
     localparam WIN_SCORE = 10;
 
@@ -44,6 +45,8 @@ module Game_Control(
             map <= map_next;
         end
     end
+
+    assign en_music = (cur_state != IDLE);
 
     always@* begin
         next_state = cur_state;
@@ -112,7 +115,7 @@ module Game_Control(
             next_score = 0;
         end
         else if(cur_state == GAME && one_pulse_pos != 15 && map[one_pulse_pos] == 1) begin
-            next_score = 1;
+            next_score = cur_score + 1;
         end
     end
 
@@ -128,7 +131,7 @@ module LFSR(
 
     always@(posedge clk) begin
         if(rst) begin
-            rnd <= 9'b1_101_0010;
+            rnd <= 9'b0_100_0010;
         end
         else begin
             rnd <= {rnd[0], rnd[8], rnd[7]^rnd[0], rnd[6:5], rnd[4]^rnd[0], rnd[3]^rnd[0], rnd[2:1]};
