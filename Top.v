@@ -3,9 +3,12 @@ module Top(
     input wire rst,
     input wire btnR,
 
+
+
     inout wire PS2_CLK,
     inout wire PS2_DATA,
 
+    output wire rst_out,
     output wire hit, 
     output wire en_music,
     output wire [3:0] DIGIT,
@@ -35,6 +38,7 @@ module Top(
     // wire hit;
     // wire en_music;
 
+    assign rst_out = rst;
 
     Keyboard_Interface Keyboard_Interface_inst(
         .clk(clk),
